@@ -28,7 +28,7 @@ builder.Services.AddCors(
                 }
             );
 
-builder.Services.AddDbContext<SpelContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ReversiRestReparatieApiDb")));
+builder.Services.AddDbContext<SpelContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 //builder.Services.AddScoped<ISpelRepository, SpelRepository>(); //DI
 builder.Services.AddScoped<ISpelRepository, SpelAccessLayer>();
