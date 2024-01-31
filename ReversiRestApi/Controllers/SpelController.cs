@@ -280,5 +280,11 @@ namespace ReversiRestApi.Controllers
 
             return Ok(spel);
         }
+
+        [HttpGet("bobr")]
+        public ActionResult<IEnumerable<string>> GetBobr()
+        {
+            return Content("Bobr");
+        }
     }
 }
